@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./readme-images/logo.svg" width="350px">
+  <img src="./readme-images/logo.png" width="350px">
 
   <h2>CodeChums - CRUD Application</h2>
 
