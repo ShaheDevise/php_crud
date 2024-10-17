@@ -54,7 +54,7 @@ $view_userdata = mysqli_fetch_array($view_user_data);
             <!-- 
             -- nav right -->
             <div class="nav_right">
-                <a href="#" target="_blank" rel="noopener noreferrer">গিটহাব <i class='bx bxl-github'></i></a>
+                <a href="https://github.com/ShaheDevise/php_crud.git" target="_blank" rel="noopener noreferrer">গিটহাব <i class='bx bxl-github'></i></a>
             </div>
         </nav>
     </header>
