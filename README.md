@@ -78,7 +78,7 @@ Linux and macOS:
 Windows:
 
 ```bash
-git clone https://github.com/ShaheDevise/php_crud.git
+  git clone https://github.com/ShaheDevise/php_crud.git
 ```
 
 ### Contact
