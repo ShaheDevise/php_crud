@@ -67,7 +67,7 @@ Before you begin, ensure you have met the following requirements:
 
 ### Run Locally
 
-To run **jack-portfolio** locally, run this command on your git bash:
+To run **crud application** locally, run this command on your git bash:
 
 Linux and macOS:
 
