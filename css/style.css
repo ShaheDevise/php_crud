@@ -1,0 +1,287 @@
+/*  
+ google font
+*/
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap');
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+:root{
+    --primary_color: #6E54B5;
+    --background_color: #000;
+    --text_dark: rgba(0,0,0,0.6);
+    --text_light: rgba(255,255,255,0.6);
+    --primary_font: "Hind Siliguri", sans-serif;
+    --secondary_font: "Arimo", sans-serif;
+    --background_light: rgba(255,255,255,0.2);
+    --background_light_two: rgba(255,255,255,0.1);
+}
+
+body{
+    background: var(--background_color);
+    font-family: var(--primary_font);
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+/* 
+--------------------- global style */
+.w_100{
+    width: 100%;
+}
+
+.mx_auto{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* 
+-- header */
+header{
+    padding: 1rem;
+}
+
+header nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* 
+-- nav right */
+.nav_right a{
+    background: var(--background_light_two);
+    padding: 0.3rem 0.7rem;
+    border-radius: 0.5rem;
+    font-size: 0.900rem;
+    color: #fff;
+    transition: background 0.2s ease;
+}
+
+.nav_right a:is(:hover, :focus-visible){
+    background: var(--background_light);
+}
+
+.table_container{
+    padding: 5rem 1rem 5rem 1rem;
+}
+
+.add_button a{
+    padding: 0.3rem 1rem;
+    border-radius: 0.5rem;
+    background: var(--background_light_two);
+    color: #fff;
+    transition: background 0.2s ease;
+}
+
+.add_button a:is(:hover, :focus-visible){
+    background: var(--background_light);
+}
+
+table{
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+    margin-top: 1.5rem;
+}
+
+th,
+td{
+    text-align: center;
+    padding: 1rem;
+}
+
+thead tr{
+    background: #323232;
+}
+
+td.manage a{
+    padding: 0.2rem 0.7rem;
+    border-radius: 0.3rem;
+    color: #fff;
+    background: green;
+    transition: background 0.1s ease ;
+}
+
+td.manage a:nth-of-type(1){
+    background: rgb(0, 115, 255);
+}
+
+td.manage a:nth-of-type(3){
+    background: rgb(255, 0, 0);
+}
+
+td.manage a:is(:hover, :focus-visible){
+    background: rgb(0, 100, 0);
+}
+
+td.manage a:nth-of-type(1):is(:hover, :focus-visible){
+    background: rgb(0, 79, 176);
+}
+
+td.manage a:nth-of-type(3):is(:hover, :focus-visible){
+    background: rgb(195, 0, 0);
+}
+
+tbody tr:hover{
+    background: rgba(255, 255, 255, 0.1);
+}
+
+tbody tr td{
+    cursor: default;
+}
+
+tbody tr:nth-of-type(2n){
+    background: rgba(255, 255, 255, 0.045);
+}
+
+tbody tr:nth-of-type(2n):hover{
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* 
+------------------- add new developer */
+.form_container{
+    margin-top: 2rem;
+    padding: 1rem 1rem 3rem 1rem;
+}
+
+.form_container form{
+    padding: 1rem;
+    color: #fff;
+    max-width: 640px;
+}
+
+.form_title{
+    text-align: center;
+}
+
+.form_title h3{
+    font-size: 1.5rem;
+    margin-bottom: 1.7rem;
+}
+
+.form_title h3 span, .user_main{
+    padding: 0.02rem 0.5rem;
+    border-radius: 0.3rem;
+    background: #fff;
+    color: #000;
+}
+
+.input_grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+}
+
+.input_group{
+    margin-bottom: 1rem;
+}
+
+.input_group input,
+.input_group select{
+    width: 100%;
+    height: 60px;
+    border: none;
+    outline: none;
+    background: #333;
+    color: #ddd;
+    border-radius: 0.3rem;
+    padding: 0 1.5rem;
+    font-size: 1.2rem;
+    font-family: var(--primary_font);
+    transition: background 0.2s ease;
+    appearance: none;
+    -moz-appearance: none;
+}
+
+.input_group input:focus, .input_group select:focus{
+    outline: 1px solid #ddd;
+}
+
+.button_group{
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+}
+
+.button_group button{
+    width: 100%;
+    height: 45px;
+    padding: 0 1rem;
+    border: none;
+    outline: none;
+    border-radius: 0.5rem;
+    background: #6E54B5;
+    color: #fff;
+    font-size: 1.2rem;
+    font-family: var(--primary_color);
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.button_group button:nth-of-type(2n){
+    background: darkorange;
+}
+
+.button_group button:is(:hover, :focus-visible){
+    background: #543c97;
+}
+
+/* responsive */
+
+/* form */
+@media (max-width: 965px) {
+    .input_grid {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 0rem;
+    }
+
+    .button_group {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 1rem;
+    }
+
+    .wrapper .table_container table thead tr th{
+        display: none;
+        /* text-align: left; */
+    }
+
+    .wrapper .table_container table tbody tr td:first-child{
+        padding-top: 2rem;
+    }
+
+    .wrapper .table_container table tbody tr td:last-child{
+        padding-bottom: 2rem;
+    }
+
+    .wrapper .table_container table tbody tr td{
+        display: block;
+        text-align: left;
+    }
+
+    .wrapper .table_container table tbody tr td::before{
+        content: attr(data-cell) ": ";
+        font-weight: 700;
+    }
+    
+}
