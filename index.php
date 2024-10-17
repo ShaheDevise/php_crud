@@ -115,7 +115,7 @@ $sql = mysqli_query($con, $data);
 
                                     <a href="./php/single_edit.php?slug=<?php echo $all_data['slug']; ?>" title="Edit <?php echo $all_data['fullname']; ?>"><i class='bx bxs-edit'></i></a>
 
-                                    <a href="./php/delete_user.php?slug=<?php echo $all_data['slug']; ?>" title="Delete <?php echo $all_data['fullname']; ?>"><i class='bx bx-trash' ></i></a>
+                                    <a href="./php/delete_user.php?slug=<?php echo $all_data['slug']; ?>" title="Delete <?php echo $all_data['fullname']; ?>"><i class='bx bx-trash'></i></a>
                                 </td>
                             </tr>
                     <?php
